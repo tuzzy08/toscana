@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toscana Ottenau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="css/cookie-consent.css" />
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Logo Section -->
+     <!-- Header with Logo and Mobile Menu -->
+		 <header class="w-full bg-white relative">
+			<div class="max-w-xl mx-auto flex items-center justify-between px-4 md:px-6 relative py-2">
+				<!-- Centered Logo on Large Devices, Positioned Appropriately on Small Devices -->
+				<div class="absolute md:static md:flex md:justify-center w-full">
+						<img src="assets/logo.png" alt="Toscana Ottenau" class="w-28 h-14 md:h-full md:w-48 lg:w-full">
+				</div>
+				
+				<!-- Mobile Menu Button on Right for Small Devices -->
+				<button id="mobile-menu-btn" class="ml-auto md:hidden p-2 text-gray-600" style="position: relative; z-index: 50; background: rgba(255,0,0,0.1); cursor: pointer;">
+					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+					</svg>
+			</button>
+			</div>
+		</header>
+
+    <!-- Navigation -->
+    <nav class="bg-white border-y border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center justify-center py-4">
+                <div class="h-px bg-gray-300 flex-grow"></div>
+                <div class="flex space-x-8 px-8">
+									<a href="index.html" class="nav-link">HOME</a>
+									<a href="#" class="nav-link">SPEISEN</a>
+									<a href="gallery.html" class="nav-link">GALERIE</a>
+									<a href="events.html" class="nav-link">EVENTS</a>
+									<a href="contact.html" class="nav-link">KONTAKT</a>
+                </div>
+                <div class="h-px bg-gray-300 flex-grow"></div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden fixed inset-0 bg-white z-50">                
+              <div class="flex justify-end p-4">
+								<button id="close-menu-btn" class="p-2 text-gray-600 hover:text-gray-900">
+										<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+												<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+										</svg>
+								</button>
+              </div>
+								<div class="flex flex-col space-y-2 p-4">
+									<a href="index.html" class="mobile-nav-link">HOME</a>
+									<a href="#" class="mobile-nav-link">SPEISEN</a>
+									<a href="gallery.html" class="mobile-nav-link">GALERIE</a>
+									<a href="events.html" class="mobile-nav-link">EVENTS</a>
+									<a href="contact.html" class="mobile-nav-link">KONTAKT</a>
+								</div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="flex-grow py-16">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl font-semibold text-center text-[#E4690E] mb-2">Speisen</h1>
+						<div class="max-w-2xl justify-center items-center mx-auto"> <p class="text-justify text-gray-600 mb-12">
+							Hinter jedem Service, den wir anbieten, steht ein engagiertes Team von Fachleuten, 
+							die alle ihre einzigartigen Fähigkeiten und ihre Begeisterung in unser Unternehmen einbringen.
+					</p></div>
+           
+
+            <!-- Menu Accordion -->
+            <div class="space-y-4" id="menu-accordion">
+                <!-- Antipasti Section -->
+                <div class="menu-section">
+                    <button class="menu-header">
+                        <span>Antipasti / Vorspeisen</span>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="menu-content hidden">
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Zuppa di Pesce</h3>
+                                    <p class="text-gray-600">Mediterrane Fischsuppe</p>
+                                </div>
+                                <span class="font-semibold">€19.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Vitello Tonnato</h3>
+                                    <p class="text-gray-600">hachdünnes Kalbfleisch mit einer
+                                        Thunfisch-Kapern Creme</p>
+                                </div>
+                                <span class="font-semibold">€19.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Carpaccio di Manzo</h3>
+                                    <p class="text-gray-600">Rindercarpaccio mit Rucola und Parmesan</p>
+                                </div>
+                                <span class="font-semibold">€19.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-section">
+                    <button class="menu-header">
+                        <span>Insalate / Salate</span>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="menu-content hidden">
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Insalata Mista</h3>
+                                    <p class="text-gray-600">bunter Salatteller</p>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Groß €14.00</span><br>
+                                    <span class="text-gray-600">klein €7.50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Insalata Italia</h3>
+                                    <p class="text-gray-600">Salatteller mit Schinken, Käse, Ei und
+                                        Zwiebeln</p>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Groß €14.00</span><br>
+                                    <span class="text-gray-600">klein €11.50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Insalata Nizzarda</h3>
+                                    <p class="text-gray-600">Salatteller mit Thunfisch, Sardellen, Ei,
+                                        Oliven und Zwiebeln</p>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Groß €15.00</span><br>
+                                    <span class="text-gray-600">klein €12.50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Insalata Mediterranea</h3>
+                                    <p class="text-gray-600">frischer Meeresfrüchtesalat</p>
+                                </div>
+                                <span class="font-semibold">€21.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Gourmet Salat</h3>
+                                    <p class="text-gray-600">Blattsalate mit gebratenen
+                                        Roastbeefstreifen, Champignon und Parmesan</p>
+                                </div>
+                                <span class="font-semibold">€22.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bambini Section -->
+                <div class="menu-section">
+                    <button class="menu-header">
+                        <span>Bambini / Kinderteller</span>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="menu-content hidden">
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Spaghetti al pomodoro</h3>
+                                    <p class="text-gray-600">Spaghetti mit Tomatensauce</p>
+                                </div>
+                                <span class="font-semibold">€9.00</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Cotoletta alla milanese con patatine</h3>
+                                    <p class="text-gray-600">Kinderschnitzel mit Pommes</p>
+                                </div>
+                                <span class="font-semibold">€13.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Pasta Section -->
+                <div class="menu-section">
+                    <button class="menu-header">
+                        <span>Pasta / Nudeln</span>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="menu-content hidden">
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Tagliolini con ragù di Porcini</h3>
+                                    <p class="text-gray-600">Tagliolini mit Steinpilzragout u. Parmesan</p>
+                                </div>
+                                <span class="font-semibold">€20.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Linguine al Gambero Rosso</h3>
+                                    <p class="text-gray-600">Linguine mit gebratnene Gambas in
+                                        Chili-Knoblauchsauce</p>
+                                </div>
+                                <span class="font-semibold">€24.00</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Spaghetti al Pesto Genovese e Pinoli</h3>
+                                    <p class="text-gray-600">Spaghetti mit Basilikum Pesto und
+                                        gerösteten Pinienkermen</p>
+                                </div>
+                                <span class="font-semibold">€17.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Spaghetti alla Scogliera</h3>
+                                    <p class="text-gray-600">Spaghetti mit frischen Meeresfrüchten</p>
+                                </div>
+                                <span class="font-semibold">€23.00</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Pennette al Barolo</h3>
+                                    <p class="text-gray-600">Pasta in Barolosauce mit gebratenen
+                                        Champignons, Angussteakstreifen und
+                                        Parmesan</p>
+                                </div>
+                                <span class="font-semibold">€23.00</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Tagliatelle al Salmone</h3>
+                                    <p class="text-gray-600">Tagliatelle mit Lachswürfel in Cremesause</p>
+                                </div>
+                                <span class="font-semibold">€24.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza Section -->
+                <div class="menu-section">
+                    <button class="menu-header">
+                        <span>Pizza</span>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="menu-content hidden">
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Margherita</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella</p>
+                                </div>
+                                <span class="font-semibold">€10.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Tre Gusti</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Schinken, Salami, Pilze</p>
+                                </div>
+                                <span class="font-semibold">€13.00</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Quattro Stagioni</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Schinken, Salami, Pilze, Paprika</p>
+                                </div>
+                                <span class="font-semibold">€13.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Diavola</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Scharfe Salami, Pilze, Paprika</p>
+                                </div>
+                                <span class="font-semibold">€14.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Capricciosa</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Artischocken, Schinken, Ei, Pilze</p>
+                                </div>
+                                <span class="font-semibold">€14.00</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Vegetariana</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Gegrilltes Gemüse</p>
+                                </div>
+                                <span class="font-semibold">€15.00</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Marinara</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Frische Meeresfrüchte</p>
+                                </div>
+                                <span class="font-semibold">€19.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Rustica</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Parmaschinken, Rucola, Parmesan</p>
+                                </div>
+                                <span class="font-semibold">€19.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Crudaiola</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Frische Tomatenstücke, Basilikum, Knoblauch, Parmesan</p>
+                                </div>
+                                <span class="font-semibold">€13.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Mediterranea</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Thunfisch, Zwiebeln</p>
+                                </div>
+                                <span class="font-semibold">€14.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Carpaccio</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Rindfleisch, Rucola, Parmesan</p>
+                                </div>
+                                <span class="font-semibold">€19.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Casereccia</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Oliven, Kapern, Sardellen, Knoblauch, Oregano</p>
+                                </div>
+                                <span class="font-semibold">€12.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Biancaneve</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Gorgonzola, Zwiebeln, Knoblauch</p>
+                                </div>
+                                <span class="font-semibold">€13.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Hawaii</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Schinken, Ananas</p>
+                                </div>
+                                <span class="font-semibold">€13.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Tirolese</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Speck, Gorgonzola, Spinat, Knoblauch</p>
+                                </div>
+                                <span class="font-semibold">€14.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Toscana</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Steinpilze, Salsiccia, Rucola, Knoblauch</p>
+                                </div>
+                                <span class="font-semibold">€19.50</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Calzone</h3>
+                                    <p class="text-gray-600">Tomaten, Mozzarella, Schinken, Salami, Pilze</p>
+                                </div>
+                                <span class="font-semibold">€12.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carne / Fleisch (Meat) -->
+                <div class="menu-section">
+									<button class="menu-header">
+											<span>Carne / Fleisch (Meat)</span>
+											<svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+											</svg>
+									</button>
+									<div class="menu-content hidden">
+											<div class="menu-item">
+													<div class="flex justify-between items-start">
+															<div>
+																	<h3 class="font-semibold">Cotoletta alla Milanese</h3>
+																	<p class="text-gray-600">paniertes Schweineschnitzel mit Pommes
+																		Frites und Salat</p>
+															</div>
+															<span class="font-semibold">€21.00</span>
+													</div>
+											</div>
+											<div class="menu-item">
+													<div class="flex justify-between items-start">
+															<div>
+																	<h3 class="font-semibold">Bistecca Madagascar</h3>
+																	<p class="text-gray-600">Rinderrückensteak mit Cognac-Pfeffersauce,
+																		Pasta und Salat</p>
+															</div>
+															<span class="font-semibold">€33.50</span>
+													</div>
+											</div>
+											<div class="menu-item">
+													<div class="flex justify-between items-start">
+															<div>
+																	<h3 class="font-semibold">Bistecca ai Ferri</h3>
+																	<p class="text-gray-600">Rinderrückensteak mit Kräuterbutter,
+																		Pommes Frites und Salat</p>
+															</div>
+															<span class="font-semibold">€32.50</span>
+													</div>
+											</div>
+									</div>
+							</div>
+							<!-- Pesce/Fish -->
+							<div class="menu-section">
+								<button class="menu-header">
+										<span>Pesce / Fisch (Fish)</span>
+										<svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+												<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+										</svg>
+								</button>
+								<div class="menu-content hidden">
+										<div class="menu-item">
+												<div class="flex justify-between items-start">
+														<div>
+																<h3 class="font-semibold">Branzino alla griglia</h3>
+																<p class="text-gray-600">Wolfsbarsch-Filet auf Rosmarin Kartoffeln und Salat</p>
+														</div>
+														<span class="font-semibold">€32.50</span>
+												</div>
+										</div>
+								</div>
+						</div>							
+                <!-- Dessert Section -->
+                <div class="menu-section">
+									<button class="menu-header">
+											<span>Dolce / Dessert (Desserts)</span>
+											<svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+											</svg>
+									</button>
+									<div class="menu-content hidden">
+											<div class="menu-item">
+													<div class="flex justify-between items-start">
+															<div>
+																	<h3 class="font-semibold">Panna cotta</h3>
+																	<p class="text-gray-600">mit Himbeermark und Früchten</p>
+															</div>
+															<span class="font-semibold">€10.50</span>
+													</div>
+											</div>
+											<div class="menu-item">
+													<div class="flex justify-between items-start">
+															<div>
+																	<h3 class="font-semibold">Tiramisu</h3>
+																	<p class="text-gray-600">hausgemacht</p>
+															</div>
+															<span class="font-semibold">€10.50</span>
+													</div>
+											</div>
+											<div class="menu-item">
+													<div class="flex justify-between items-start">
+															<div>
+																	<h3 class="font-semibold">Mandel Parfait</h3>
+																	<p class="text-gray-600">mit Feigen</p>
+															</div>
+															<span class="font-semibold">€11.00</span>
+													</div>
+											</div>
+									</div>
+							</div>
+							
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+					<span><p>&copy; 2024 Toscana Ottenau</p> <a class="text-[#FF6F61]" href="impressum.html">Impressum</a></span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+	<script src="js/cookie-consent.js"></script>
+</body>
+</html>

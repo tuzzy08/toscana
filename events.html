@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toscana Ottenau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+	<link type="text/css" rel="stylesheet" href="css/cookie-consent.css" />
+</head>
+<body>
+    <!-- Logo Section -->
+    <!-- Header with Logo and Mobile Menu -->
+    <header class="w-full bg-white relative">
+			<div class="max-w-xl mx-auto flex items-center justify-between px-4 md:px-6 relative py-2">
+				<!-- Centered Logo on Large Devices, Positioned Appropriately on Small Devices -->
+				<div class="absolute md:static md:flex md:justify-center w-full">
+						<img src="assets/logo.png" alt="Toscana Ottenau" class="w-28 h-14 md:h-full md:w-48 lg:w-full">
+				</div>
+				
+				<!-- Mobile Menu Button on Right for Small Devices -->
+				<button id="mobile-menu-btn" class="ml-auto md:hidden p-2 text-gray-600" style="position: relative; z-index: 50; background: rgba(255,0,0,0.1); cursor: pointer;">
+					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+					</svg>
+			</button>
+			</div>
+		</header>
+
+    <!-- Navigation -->
+    <nav class="bg-white border-y border-gray-200">
+			<div class="max-w-6xl mx-auto px-4">
+					<!-- Desktop Menu -->
+					<div class="hidden md:flex items-center justify-center py-4">
+							<div class="h-px bg-gray-300 flex-grow"></div>
+							<div class="flex space-x-8 px-8">
+									<a href="index.html" class="nav-link">HOME</a>
+									<a href="menu.html" class="nav-link">SPEISEN</a>
+									<a href="gallery.html" class="nav-link">GALERIE</a>
+									<a href="#" class="nav-link">EVENTS</a>
+									<a href="contact.html" class="nav-link">KONTAKT</a>
+							</div>
+							<div class="h-px bg-gray-300 flex-grow"></div>
+					</div>
+
+					<!-- Mobile Menu -->
+					<div id="mobile-menu" class="mobile-menu md:hidden fixed inset-0 bg-white z-50">                
+						<div class="flex justify-end p-4">
+							<button id="close-menu-btn" class="p-2 text-gray-600 hover:text-gray-900">
+									<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+									</svg>
+							</button>
+						</div>
+							<div class="flex flex-col space-y-2 p-4">
+									<a href="index.html" class="mobile-nav-link">HOME</a>
+									<a href="menu.html" class="mobile-nav-link">SPEISEN</a>
+									<a href="gallery.html" class="mobile-nav-link">GALERIE</a>
+									<a href="#" class="mobile-nav-link">EVENTS</a>
+									<a href="contact.html" class="mobile-nav-link">KONTAKT</a>
+							</div>
+					</div>
+			</div>
+		</nav>
+
+    <!-- Main Content -->
+    <main class="min-h-screen bg-[#FF6F61] text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto text-center">
+                <h1 class="text-4xl font-bold mb-12">Silvester Menü 2024</h1>
+                
+                <div class="space-y-4 text-left mb-12">
+                    <h2 class="text-xl mb-4">Prosecco Empfang</h2>
+                    <ul class="space-y-3 list-disc list-inside">
+                        <li>Krustentier Schaum-Süppchen mit Garnelen</li>
+                        <li>Feldsalat mit Barbarie Entenbrustfilet, Orange und Pistazie</li>
+                        <li>Schwertfisch-Steak in einer Mediterranen Panade auf Safran-Spargel Risotto</li>
+                        <li>Rinderfilet unter einer Parmesan-Trüffel Kruste, Trüffeljus dazu Kartoffel-Gratin</li>
+                        <li>Überraschungs-Desserts</li>
+                    </ul>
+                </div>
+
+                <div class="text-lg text-left mb-8">
+                    Inkl. Bier, Offene Weine, Softgetränke, Kaffee.
+                </div>
+
+                <div class="text-2xl font-bold mb-8 text-left">
+                    p.P 140 €
+                </div>
+
+                <button class="bg-[#4A2512] text-white px-8 py-3 rounded hover:bg-opacity-90 transition-colors">
+                    Jetzt reservieren
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+					<span><p>&copy; 2024 Toscana Ottenau</p> <a class="text-[#FF6F61]" href="impressum.html">Impressum</a></span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+	<script src="js/cookie-consent.js"></script>
+</body>
+</html>

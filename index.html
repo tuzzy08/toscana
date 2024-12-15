@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toscana Ottenau</title>
+		<meta name="description" content="Enjoy authentic Italian cuisine at Toscana Ottenau, your premier restaurant destination. Discover our menu, events, and more!">
+    <meta name="keywords" content="Italian restaurant, Toscana, Ottenau, authentic cuisine, menu, events">
+    <meta property="og:title" content="Toscana Ottenau">
+    <meta property="og:description" content="Experience the best Italian dishes at Toscana Ottenau. Join us for a delightful dining experience.">
+    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:url" content="http://toscana-ottenau.de">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Toscana Ottenau">
+    <meta name="twitter:description" content="Savor authentic Italian flavors at Toscana Ottenau. Visit us today!">
+    <meta name="twitter:image" content="assets/logo.png">
+		<link rel="canonical" href="http://toscana-ottenau.de/" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+		<link type="text/css" rel="stylesheet" href="css/cookie-consent.css" />
+</head>
+<body>
+    <!-- Logo Section -->
+    <!-- Header with Logo and Mobile Menu -->
+    <header class="w-full bg-white relative">
+			<div class="max-w-xl mx-auto flex items-center justify-between px-4 md:px-6 relative py-2">
+				<!-- Centered Logo on Large Devices, Positioned Appropriately on Small Devices -->
+				<div class="absolute md:static md:flex md:justify-center w-full">
+						<img src="assets/logo.png" alt="Toscana Ottenau" class="w-28 h-14 md:h-full md:w-48 lg:w-full">
+				</div>
+				
+				<!-- Mobile Menu Button on Right for Small Devices -->
+				<button id="mobile-menu-btn" class="ml-auto md:hidden p-2 text-gray-600 rounded" style="position: relative; z-index: 50; background: rgba(255,0,0,0.1); cursor: pointer;">
+						<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+						</svg>
+				</button>
+			</div>
+		</header>
+
+    <!-- Navigation -->
+    <nav class="bg-white border-y border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center justify-center py-4">
+                <div class="h-px bg-gray-300 flex-grow"></div>
+                <div class="flex space-x-8 px-8">
+                    <a href="#" class="nav-link">HOME</a>
+                    <a href="menu.html" class="nav-link">SPEISEN</a>
+                    <a href="gallery.html" class="nav-link">GALERIE</a>
+                    <a href="events.html" class="nav-link">EVENTS</a>
+                    <a href="contact.html" class="nav-link">KONTAKT</a>
+                </div>
+                <div class="h-px bg-gray-300 flex-grow"></div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden fixed inset-0 bg-white z-50">                
+              <div class="flex justify-end p-4">
+								<button id="close-menu-btn" class="p-2 text-gray-600 hover:text-gray-900">
+										<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+												<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+										</svg>
+								</button>
+              </div>
+								<div class="flex flex-col space-y-2 p-4">
+										<a href="#" class="mobile-nav-link">HOME</a>
+										<a href="menu.html" class="mobile-nav-link">SPEISEN</a>
+										<a href="gallery.html" class="mobile-nav-link">GALERIE</a>
+										<a href="events.html" class="mobile-nav-link">EVENTS</a>
+										<a href="contact.html" class="mobile-nav-link">KONTAKT</a>
+								</div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Image -->
+				<div class="w-full lg:h-[800px] h-[640px] relative overflow-hidden lg:w-4/5 mx-auto ">
+					<img src="assets/hero.jpg" 
+							 alt="Restaurant Interior" 
+							 class="w-full h-full object-cover">
+			</div>
+			
+
+        <!-- Welcome Section -->
+        <section id="home" class="py-10">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h1 class="text-3xl text-[#E4690E] font-semibold mb-6">Willkommen in der Toscana Ottenau</h1>
+                <p class="text-gray-600">
+                    - wo Genuss und Gastfreundschaft aufeinandertreffen. Entdecken Sie unsere italienischen Spezialitaten und lassen Sie sich von unserer Leidenscahaft fur gutes Essen verzaubern!
+                </p>
+            </div>
+            </section>
+
+            <!-- Image Grid -->
+        <section class="max-w-6xl mx-auto px-4 py-12">
+            <div class="image-grid">
+                <img src="assets/grid/grid1_c.jpg" alt="Restaurant ambiance" >
+                <img src="assets/grid/grid2.jpg" alt="Italian dish">
+                <img src="assets/grid/grid3.jpg" alt="Restaurant interior">
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-2xl font-semibold mb-4">La Dolce Vita im Restaurant Toscana</h2>
+                <p class="mb-4">
+                    Willkommen im Ristorante Toscana in Ottenau, wo kulinarische Erlebnisse und italienische Lebensfreude Hand in Hand gehen.
+                </p>
+								<p class="mb-4">
+									Machen Sie Urlaub vom Alltag und lassen Sie sich von unseren original italienischen Spezialitäten in mediterranem Ambiente verwöhnen. 
+									Unsere Küche bietet eine Vielfalt an Köstlichkeiten, von Antipasti und Pizza über zartes Rinderfilet, frischen Fisch, 
+									Pasta und Salate bis hin zu saisonalen Gerichten, die jede Woche wechseln - hier ist für jeden Geschmack etwas dabei.
+							</p>
+                <p class="mb-4">
+									Für besondere Anlässe richten wir gerne Ihre Familien- oder Firmenfeier aus und erstellen ein individuelles Menü nach Ihren Wünschen,
+									 sei es deutsch oder mediterran.
+                </p>
+								<p class="mb-4">
+									Unser Restaurant bietet 70 Plätze, einschließlich eines separaten Raumes für bis zu 30 Gäste. Für größere Feierlichkeiten wie Hochzeiten 
+									oder Geburtstage steht unser Festsaal mit Platz für 80 bis 100 Personen zur Verfügung.
+								</p>
+								<p class="mb-4">In den Sommermonaten lädt unsere idyllische Terrasse mit einem herrlichen Biergarten und 60 Sitzplätzen dazu ein, 
+									unsere Gerichte unter freiem Himmel zu genießen.</p>
+								<p class="mb-4">
+									Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen und Ihnen ein unvergessliches Erlebnis zu bereiten.
+								</p>
+								<p class="mb-4">Ihr Team vom Ristorante Toscana</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontakt" class="py-16 bg-gray-50">
+					<div class="max-w-4xl mx-auto px-4">
+							<!-- <h2 class="text-2xl font-semibold mb-8 text-center"></h2> -->
+						<div class="grid md:grid-cols-2 gap-16">
+							<div class="contact-form">
+								<div class="mb-8">
+									<h2 class="text-2xl text-[#dd6b20] font-semibold mb-6">Kontaktieren Sie uns</h4>
+									<p class="mt-2">Für Reservierungen und Anfragen füllen Sie bitte das untentehende Formular aus oder rufen Sie uns an:.</p>
+									<p class="mt-2 font-semibold">Am Schießstand 1 - 76571 Gaggenau-Ottenau</p>
+									<p class="font-semibold">Tel.: 07225 981018 - Mobi: 0177 7315085</p>
+								</div>
+								<form id="contact-form" action="https://formsubmit.co/info@toscana-ottenau.de" method="POST" >
+									<input type="text" placeholder="Name" name="name" required>
+									<input type="email" placeholder="Email" name="email" required>
+									<textarea rows="4" placeholder="Nachricht" name="message" required></textarea>
+									<div class="relative flex items-center gap-4">
+										<button type="submit">Senden</button>
+										<div id="toast" class="hidden">
+											<span class="bg-green-500 text-white px-4 py-2 rounded-md text-sm">
+												Nachricht erfolgreich gesendet!
+											</span>
+										</div>
+									</div>
+							</form>
+							</div>
+							<div>
+									<iframe
+											src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Am%20Schie%C3%9Fstand%201%20-%2076571%20Gaggenau-Ottenau+(Toscana%20Ottenau)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+											width="100%"
+											height="400"
+											style="border:0;"
+											allowfullscreen=""
+											loading="lazy">
+									</iframe>
+									<div class="mt-4">
+										<h2 class="text-2xl text-[#dd6b20] font-semibold">Toscana Ottenau</h2>
+										<p class="">Am Schießstand 1 - 76571 Gaggenau-Ottenau</p>
+									</div>
+							</div>
+						</div>
+					</div>
+      	</section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+					<span><p>&copy; 2024 Toscana Ottenau</p> <a class="text-[#FF6F61]" href="impressum.html">Impressum</a></span>
+        </div>
+    </footer>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Restaurant",
+				"name": "Toscana Ottenau",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Am Schießstand 1",
+					"addressLocality": "Ottenau",
+					"addressRegion": "BW",
+					"postalCode": "76571",
+					"addressCountry": "DE"
+				},
+				"telephone": "07225 981018, 0177 7315085",
+				"url": "http://toscana-ottenau.de",
+				"image": "assets/logo.png",
+				"servesCuisine": "Italian",
+				"menu": "http://toscana-ottenau.de/menu",
+				"openingHours": "Mo-Su 11:00-22:00"
+			}
+			</script>
+
+    <script src="js/main.js"></script>
+		<script src="js/cookie-consent.js"></script>
+</body>
+</html>
